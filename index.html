@@ -16,96 +16,177 @@
 </head>
 <body>
   <main class="page">
+   <!-- TOP HEADER BAR -->
+   <div class="top-header">
+    <div class="container top-header-inner">
+      <div class="logo-area">
+        <img src="logo11.jpeg" alt="IELTS Powerhouse Logo" class="logo">
+      </div>
+      <div class="fee-area">
+        <span class="fee-text">Registration Fee: <strong>₹99 Only</strong></span>
+      </div>
+    </div>
+  </div>
+  
+  
+
     <!-- HERO -->
-    <header class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1 class="eyebrow">IELTS Powerhouse Workshop</h1>
-          <h2 class="headline">Learn the Hidden Secret to Score <span class="gold">Band 7+</span> in IELTS</h2>
-          <p class="sub">One-day intensive workshop — proven strategies, live practice, real feedback. Limited seats.</p>
+  <section class="hero-section">
+  <div class="hero-section__inner container">
+    <!-- LEFT: Text -->
+    <div class="hero-section__copy">
+      <div class="eyebrow">IELTS Powerhouse Workshop</div>
+      <h1 class="hero-section__headline">
+        Learn the Hidden Secret to Score <span class="gold">Band 7+</span> in IELTS
+      </h1>
+      <p class="hero-section__sub">No matter that you've already joined the IELTS classes, this one-day workshop is to boost your Score.</p>
 
-          <div class="cta-row">
-            <button id="registerBtn" class="btn btn-gold">Register Now for ₹99</button>
-            <a href="#what-youll-learn" class="btn btn-outline">See the curriculum</a>
-          </div>
+     
 
-          <ul class="meta">
-            <li><strong>Format:</strong> Live, 1 day</li>
-            <li><strong>Seats:</strong> Limited</li>
-            <li><strong>Price:</strong> ₹99</li>
-          </ul>
-        </div>
+      <div class="hero-section__features">
+        <div class="feature">No More Complex Methods</div>
+        <div class="feature">No Daily Exam Needed</div>
+        <div class="feature">No Boring Practice Sheets</div>
+      </div>
+    </div>
 
-        <div class="hero-card">
-          <div class="card-inner">
-            <img src="placeholder-instructor.jpg" alt="Instructor" class="instructor-placeholder">
-            <p><strong>Next workshop:</strong> Sat, DD MMM YYYY</p>
-            <p class="muted">Seats filling fast — reserve your spot with a ₹99 booking fee.</p>
-          </div>
+    <!-- RIGHT: Card / Image -->
+    <aside class="hero-section__card" aria-label="Instructor card">
+      <div class="card-inner">
+        <img src="student1.jpg" alt="Instructor" class="card-image">
+        <div class="card-text">
+          <p><strong>Next workshop:</strong> Sat, 01 Nov 2025</p>
+          <p class="muted">Seats filling fast — reserve your spot with a ₹99 booking fee.</p>
         </div>
       </div>
+    </aside>
+  </div>
+</section>
+
+<!-- NEXT SECTION: Two-column layout (left card / right info + register) -->
+<section id="next-section" class="next-section compact">
+  <div class="container next-inner">
+    <!-- LEFT IMAGE -->
+    <div class="next-left">
+      <div class="visual-card">
+        <img src="ielts3.jpeg" alt="IELTS Masterclass Visual" class="visual-image">
+      </div>
+    </div>
+
+    <!-- RIGHT DETAILS -->
+    <div class="next-right">
+      <div class="info-box info-date">
+        <span>📅 <strong>1<sup>st</sup> November, Saturday | 11am</strong></span>
+      </div>
+
+      <div class="info-grid">
+        <div class="small-box">
+          <div class="small-title">⏱ Duration</div>
+          <div class="small-sub">3 – 5 hrs</div>
+        </div>
+        <div class="small-box">
+          <div class="small-title">🎯 Mode</div>
+          <div class="small-sub">Online & Offline</div>
+        </div>
+      </div>
+
+      <button id="registerSectionBtn" class="btn register-big">
+        Register Now For ₹99/-
+      </button>
+
+      <p class="note">💻 Meeting Link will be shared after registration</p>
+      <p class="seats">⚡ Limited Seats Available</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION: Features + Register (two-column boxes + centered CTA) -->
+<!-- SECTION: What You’ll Learn -->
+<section id="benefits-section" class="benefits-section dark-theme">
+  <div class="container">
+    <header class="benefits-head">
+      <p class="small-lead">It’s not just your Regular Workshop</p>
+      <h2 class="benefits-title">
+        It’s A <span class="gold">Powerhouse</span> to boost your IELTS Score — You will Get...
+      </h2>
     </header>
 
-    <!-- WHAT YOU'LL LEARN -->
-    <section id="what-youll-learn" class="section dark">
-      <div class="container">
-        <h3 class="section-title">What You'll Learn</h3>
-        <p class="lead muted light">Key strategies and actionable techniques packed into focused modules.</p>
-
-        <div class="grid two-col">
-          <div class="card dark-card">
-            <div class="icon">🎯</div>
-            <h4>Task 1 &amp; Task 2 Mastery</h4>
-            <p>Learn clear templates and time-saving structures to finish on time and score higher.</p>
-          </div>
-
-          <div class="card dark-card">
-            <div class="icon">🗣️</div>
-            <h4>Speaking Confidence System</h4>
-            <p>Techniques to think quickly, structure answers and use natural fluency markers.</p>
-          </div>
-
-          <div class="card dark-card">
-            <div class="icon">✍️</div>
-            <h4>Writing Band Boosters</h4>
-            <p>High-impact vocabulary, advanced sentence structures and coherence tricks.</p>
-          </div>
-
-          <div class="card dark-card">
-            <div class="icon">⏱️</div>
-            <h4>Time Management & Mock</h4>
-            <p>Practice under exam conditions and receive targeted feedback to improve fast.</p>
-          </div>
-        </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h3>✨ Hidden Secrets of All 4 Modules</h3>
+        <p>Learn examiner-approved strategies to score Band 7+ with confidence and ease.</p>
       </div>
-    </section>
 
-    <!-- WHO SHOULD ATTEND -->
-    <section class="section light">
-      <div class="container">
-        <h3 class="section-title dark-text">Who Should Attend</h3>
-        <p class="lead muted dark-text">This one-day workshop is perfect for:</p>
-
-        <div class="grid four-col benefits">
-          <div class="benefit">
-            <div class="check">✔</div>
-            <p>Students aiming for band 7+</p>
-          </div>
-          <div class="benefit">
-            <div class="check">✔</div>
-            <p>Professionals needing a quick score improvement</p>
-          </div>
-          <div class="benefit">
-            <div class="check">✔</div>
-            <p>Anyone wanting concise, tested exam strategies</p>
-          </div>
-          <div class="benefit">
-            <div class="check">✔</div>
-            <p>Those short on time who need fast results</p>
-          </div>
-        </div>
+      <div class="benefit-card">
+        <h3>🧠 1 Complimentary Mock Test</h3>
+        <p>Experience a real test setup and identify exactly where you can improve.</p>
       </div>
-    </section>
+
+      <div class="benefit-card">
+        <h3>🎯 1-on-1 Doubt Clearing Session</h3>
+        <p>Get personalized feedback from IELTS experts on your weak areas.</p>
+      </div>
+
+      <div class="benefit-card">
+        <h3>📘 Super Helpful IELTS Prep Material</h3>
+        <p>Exclusive templates, notes, and exercises for faster, smarter preparation.</p>
+      </div>
+    </div>
+
+    <div class="benefits-cta">
+      <button class="register-btn btn register-big" data-amount="99">
+        Register Now For ₹99/-
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- WHO SHOULD ATTEND (dark-theme, matches previous sections) -->
+<section id="who-section" class="who-section dark-theme">
+  <div class="container">
+    <header class="who-head">
+      <h2 class="who-title">Who Should Attend this <span class="gold">IELTS Powerhouse</span> Workshop?</h2>
+    </header>
+
+    <div class="who-grid">
+      <div class="who-card">
+        <div class="who-icon">🔥</div>
+        <h3>Stuck at a Low Band Score?</h3>
+        <p>Learn exactly what’s holding you back and how to break through the Band 6 barrier with proven strategies.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-icon">🚀</div>
+        <h3>Just Starting Your IELTS Journey?</h3>
+        <p>Build a strong foundation and understand the smart way to prepare from Day 1.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-icon">🎯</div>
+        <h3>Want to Score Band 7+ Fast?</h3>
+        <p>Discover time-saving hacks and examiner-focused techniques to achieve your target score sooner.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-icon">🧩</div>
+        <h3>Joined Classes but No Progress?</h3>
+        <p>Find out what your coaching missed — and master the secrets that truly boost results.</p>
+      </div>
+    </div>
+
+    <div class="who-cta">
+      <!-- Uses the same register selector in your unified JS; no JS changes required -->
+      <button class="register-btn btn register-big" data-amount="99">Register Now For ₹99/-</button>
+    </div>
+  </div>
+</section>
+
+   
+ 
+
+   
+   
 
     <!-- MEET THE EXPERTS -->
     <section class="section dark meet">
