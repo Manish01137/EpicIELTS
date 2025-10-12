@@ -317,6 +317,24 @@
     
   </main>
 
+  <!-- Sticky Bottom Bar -->
+<div class="sticky-register-bar">
+  <div class="sticky-content">
+    <span class="sticky-text">🎯 Limited Seats — Register Now for ₹99 Only!</span>
+    <button id="registerStickyBtn" class="btn sticky-btn">Register Now</button>
+  </div>
+</div>
+
+<script>
+  // inside your existing JS file, add this under registerBtn logic:
+const registerStickyBtn = document.getElementById('registerStickyBtn');
+if (registerStickyBtn) {
+  registerStickyBtn.addEventListener('click', () => {
+    document.getElementById('registerBtn')?.click(); // triggers main Razorpay flow
+  });
+}
+
+</script>
   <script src="script.js"></script>
 </body>
 </html>
