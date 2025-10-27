@@ -3581,3 +3581,72 @@
   }
 }
 
+
+
+/* ---------- Footer Policies Column (Matching Theme) ---------- */
+
+.footer-policies {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.footer-policies h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #D4AF37; /* Gold heading */
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Unordered list (bulleted) */
+.footer-policies ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual list items */
+.footer-policies li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #C9CFDA; /* Muted white/gray text */
+}
+
+/* White bullets for contrast on dark background */
+.footer-policies li::marker {
+  color: #FFFFFF;
+  font-size: 8px;
+  text-decoration: none;
+}
+
+/* Links — purple by default with hover gold + glow */
+.footer-policies a {
+  color: #FFFFFF; /* Purple link */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.footer-policies a:hover {
+  color: #D4AF37; /* Gold hover */
+  text-shadow: 0 0 8px rgba(212,175,55,0.4);
+  text-decoration: none;
+}
+
+/* Responsive - Center align on smaller screens */
+@media (max-width: 950px) {
+  .footer-policies {
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .footer-policies ul {
+    list-style-position: inside;
+  }
+}

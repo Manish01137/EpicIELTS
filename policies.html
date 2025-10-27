@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Policies | Epicink Enterprises</title>
+ 
+ <style>
+    :root{
+  --footer-bg: #0B132B;
+  --footer-heading: #D4AF37;
+  --muted: #C9CFDA;
+  --card-bg: #ffffff;
+  --page-bg: #0B132B; /* page background to match site theme */
+  --text: #111;
+  --nav-dark: #0f0f0f;
+  --brand: #00bcd4; /* optional accent if used */
+}
+
+/* Reset & body */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--page-bg);color:var(--muted);}
+
+/* Header — dark site-style */
+header{
+  background:var(--footer-bg);
+  color:#fff;
+  padding:54px 20px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+header h1{margin:0;font-size:34px;color:#fff;font-weight:700;letter-spacing:0.2px}
+header p{margin:8px 0 0;color:rgba(255,255,255,0.7);font-size:15px}
+
+/* page wrapper */
+.wrap{max-width:1100px;margin:36px auto;padding:0 20px;}
+
+/* card (white) centered on dark bg, consistent with previous design */
+.card{
+  background:var(--card-bg);
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 12px 30px rgba(2,6,23,0.6);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Nav buttons — styled to match the footer look (dark pills) */
+.policy-nav{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-bottom:22px;
+}
+.policy-nav .tab-btn{
+  background:var(--nav-dark);
+  color:#fff;
+  border-radius:8px;
+  padding:10px 16px;
+  border:none;
+  cursor:pointer;
+  box-shadow:0 6px 12px rgba(0,0,0,0.12);
+  font-weight:600;
+  transition:transform .12s ease, background .12s ease, box-shadow .12s ease;
+}
+.policy-nav .tab-btn:hover{ transform:translateY(-2px); box-shadow:0 10px 18px rgba(0,0,0,0.18); }
+
+/* active tab uses gold to harmonize with footer headings */
+.policy-nav .tab-btn.active{
+  background:var(--footer-heading);
+  color:#081018;
+  box-shadow:0 10px 26px rgba(212,175,55,0.12);
+}
+
+/* Policy content area — readable text, scrollable inside a card */
+.policy-area{
+  border-radius:8px;
+  background:var(--card-bg);
+  padding:28px;
+  min-height:420px;         /* prevents content from being pushed out of view */
+  max-height:66vh;          /* keep it on screen and allow internal scrolling */
+  overflow:auto;            /* scroll inside the card when long */
+  color:var(--text);        /* ensure readable text color */
+  line-height:1.7;
+}
+
+/* individual policy sections */
+.policy-content{ display:none; }
+.policy-content.active{ display:block; }
+
+/* heading styles inside card */
+.policy-area h3{ margin-top:0; color:#111; font-size:20px; }
+.policy-area p{ color:#333; margin:12px 0; font-size:15px; }
+
+/* small meta text */
+.small{ font-size:14px; color:#666; }
+
+/* footer that matches the site footer theme — paste this HTML at the bottom (optional) */
+.site-footer{
+  background:var(--footer-bg);
+  color:var(--muted);
+  padding:36px 20px;
+  margin-top:28px;
+  border-top:1px solid rgba(255,255,255,0.04);
+  text-align:center;
+}
+.site-footer p{ margin:0; color:var(--muted); font-size:14px; }
+
+/* responsive tweaks */
+@media (max-width:640px){
+  .policy-nav{justify-content:space-between;}
+  .policy-nav .tab-btn{flex:1;margin:6px 4px;font-size:14px;}
+  .policy-area{min-height:340px;max-height:62vh;padding:18px;}
+}
+
+/* small accessibility focus */
+.policy-nav .tab-btn:focus{ outline:3px solid rgba(212,175,55,0.12); border-radius:8px; }
+
+ </style>
+</head>
+<body>
+
+  <header>
+    <h1>Policies & Legal Information</h1>
+    <p>Epicink Enterprises</p>
+  </header>
+
+  <main class="wrap">
+    <div class="card">
+      <div class="policy-nav" role="tablist" aria-label="Policy sections">
+        <button class="tab-btn active" data-target="terms" role="tab" aria-controls="terms">Terms & Conditions</button>
+        <button class="tab-btn" data-target="privacy" role="tab" aria-controls="privacy">Privacy Policy</button>
+        <button class="tab-btn" data-target="refund" role="tab" aria-controls="refund">Refund & Cancellation</button>
+        <button class="tab-btn" data-target="shipping" role="tab" aria-controls="shipping">Shipping & Delivery</button>
+        <button class="tab-btn" data-target="contact" role="tab" aria-controls="contact">Contact</button>
+      </div>
+
+      <div class="policy-area" id="policy-area" tabindex="0">
+        <!-- Terms -->
+        <section id="terms" class="policy-content active" role="tabpanel" aria-labelledby="terms-tab">
+          <h3>Terms & Conditions</h3>
+          <p class="small">Effective Date: 16-11-2025</p>
+          <p>Welcome to Epicink Enterprises. By accessing or using our website and services, you agree to comply with the following Terms & Conditions. Please read them carefully before making any purchase.</p>
+          <p><strong>1. Services:</strong> We offer educational/training programs that are clearly described on our website. Course details, duration, and pricing are subject to change without prior notice.</p>
+          <p><strong>2. Payments:</strong> All payments are processed securely through Razorpay. By completing a payment, you confirm that the information provided is accurate and that you are authorized to use the selected payment method.</p>
+          <p><strong>3. Refunds & Cancellations:</strong> Please refer to our Refund & Cancellation Policy for details on applicable refunds and timelines.</p>
+          <p><strong>4. Intellectual Property:</strong> All website content, including text, videos, and materials, is the property of Epicink Enterprises and cannot be copied or reused without permission.</p>
+          <p><strong>5. Contact:</strong> For any issues or clarifications, contact us at: 📞 +91-70437-39436 | 📧 epicinklearn@gmail.com</p>
+        </section>
+
+        <!-- Privacy -->
+        <section id="privacy" class="policy-content" role="tabpanel" aria-hidden="true">
+          <h3>Privacy Policy</h3>
+          <p class="small">Effective Date: 16-11-2025</p>
+          <p>Epicink Enterprises respects your privacy and is committed to protecting your personal information.</p>
+          <p><strong>Information We Collect:</strong> Name, email, phone number, and payment details during course registration or purchase. Cookies and usage data to improve website experience.</p>
+          <p><strong>How We Use Your Data:</strong> To process enrollments and payments; to communicate updates, offers, and support; to improve our website and services.</p>
+          <p><strong>Data Security:</strong> All transactions are processed through secure payment gateways like Razorpay. We do not store your card or banking information.</p>
+          <p>Contact: 📧 epicinklearn@gmail.com | 📞 +91-70437-39436</p>
+        </section>
+
+        <!-- Refund -->
+        <section id="refund" class="policy-content" role="tabpanel" aria-hidden="true">
+          <h3>Refund & Cancellation Policy</h3>
+          <p class="small">Effective Date: 16-11-2025</p>
+          <p>We aim to provide quality learning experiences. If you are not satisfied with your course purchase, you may request a refund under the following conditions:</p>
+          <p><strong>1. Eligibility:</strong> Refunds only if requested within 7 days of purchase and less than 20% content accessed.</p>
+          <p><strong>2. Timelines:</strong> Approved refunds are processed within 7–10 working days to the original payment method.</p>
+          <p><strong>3. Cancellation:</strong> You may cancel your enrollment within 24 hours of purchase for a full refund.</p>
+          <p>Contact: 📧 epicinklearn@gmail.com | 📞 +91-70437-39436</p>
+        </section>
+
+        <!-- Shipping -->
+        <section id="shipping" class="policy-content" role="tabpanel" aria-hidden="true">
+          <h3>Shipping & Delivery Policy</h3>
+          <p class="small">Effective Date: 16-11-2025</p>
+          <p>Our products/services are primarily digital (online courses). Access details will be delivered via email within 24–48 hours after payment confirmation.</p>
+          <p>For any physical materials (if applicable): Minimum delivery 3–5 business days, maximum 10–12 business days. Contact support if delayed.</p>
+          <p>Support: 📧 epicinklearn@gmail.com | 📞 +91-70437-39436</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="policy-content" role="tabpanel" aria-hidden="true">
+          <h3>Contact</h3>
+          <p>For any inquiries, please reach us at:</p>
+          <p>📞 +91 70437 39436<br>📧 epicinklearn@gmail.com<br>📍 316/317 Devnandan Mall, Opp. Sanyas Ashram, Ahmedabad</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Epicink Enterprises — All Rights Reserved.</p>
+      <p style="margin-top:6px;color:rgba(255,255,255,0.6)">💳 Secure Payment via Razorpay</p>
+    </div>
+  </footer>
+  
+  <script>
+    // keep your existing tab script, and update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
+
+  <script>
+    // Tab logic + hash support + small debug logs
+    (function(){
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.policy-content');
+
+      function activate(targetId, pushState=false){
+        // Deactivate all
+        tabButtons.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('aria-hidden','true');
+        });
+
+        // Activate selected
+        const btn = document.querySelector(`.tab-btn[data-target="${targetId}"]`);
+        const content = document.getElementById(targetId);
+        if(!btn || !content){
+          console.warn('Tab or content not found for:', targetId);
+          return;
+        }
+        btn.classList.add('active');
+        content.classList.add('active');
+        content.setAttribute('aria-hidden','false');
+
+        // focus the content area for accessibility
+        content.scrollIntoView({behavior:'smooth',block:'start'});
+        content.focus({preventScroll:true});
+
+        if(pushState){
+          history.replaceState(null,'', '#' + targetId);
+        }
+      }
+
+      tabButtons.forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          activate(btn.dataset.target, true);
+        });
+      });
+
+      // default -> open hash if present, otherwise show 'terms'
+      const hash = (location.hash || '').replace('#','');
+      if(hash){
+        // small delay to allow rendering
+        setTimeout(()=> activate(hash), 60);
+      } else {
+        // ensure first tab active
+        const first = document.querySelector('.tab-btn')?.dataset.target || 'terms';
+        activate(first, false);
+      }
+
+      // dev console help: check if content is present
+      console.log('Policy tabs initialized. Active:', document.querySelector('.tab-btn.active')?.dataset.target);
+    })();
+  </script>
+
+</body>
+</html>
