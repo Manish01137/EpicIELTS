@@ -24,7 +24,9 @@
       </div>
       <div class="fee-area">
         <span class="fee-text">Registration Fee: <strong>₹99 Only</strong></span>
+      
       </div>
+      
     </div>
   </div>
   
@@ -90,9 +92,15 @@
         </div>
       </div>
 
-      <button id="registerSectionBtn" class="btn register-big">
-        Register Now For ₹99/-
-      </button>
+      <div class="benefits-cta">
+        <a 
+          href="https://rzp.io/rzp/69OR42v" 
+          target="_blank" 
+          class="btn register-big gold-btn">
+          Register Now for ₹99/-
+        </a>
+      </div>
+
 
       <p class="note">💻 Meeting Link will be shared after registration</p>
       <p class="seats">⚡ Limited Seats Available</p>
@@ -126,6 +134,7 @@
       <div class="benefit-card">
         <h3>🎯 1-on-1 Doubt Clearing Session</h3>
         <p>Get personalized feedback from IELTS experts on your weak areas.</p>
+       
       </div>
 
       <div class="benefit-card">
@@ -135,10 +144,14 @@
     </div>
 
     <div class="benefits-cta">
-      <button class="register-btn btn register-big" data-amount="99">
-        Register Now For ₹99/-
-      </button>
+      <a 
+        href="https://rzp.io/rzp/69OR42v" 
+        target="_blank" 
+        class="btn register-big gold-btn">
+        Register Now for ₹99/-
+      </a>
     </div>
+    
   </div>
 </section>
 
@@ -175,9 +188,13 @@
       </div>
     </div>
 
-    <div class="who-cta">
-      <!-- Uses the same register selector in your unified JS; no JS changes required -->
-      <button class="register-btn btn register-big" data-amount="99">Register Now For ₹99/-</button>
+    <div class="benefits-cta">
+      <a 
+        href="https://rzp.io/rzp/69OR42v" 
+        target="_blank" 
+        class="btn register-big gold-btn">
+        Register Now for ₹99/-
+      </a>
     </div>
   </div>
 </section>
@@ -219,9 +236,13 @@
         <li><span class="check">✔</span><strong> Global Exposure:</strong> Guidance for Canada, UK, Australia and more.</li>
       </ul>
 
-      <div class="experts-cta">
-        <!-- same register button class as other sections for unified JS -->
-        <button class="register-btn btn register-big" data-amount="99">Register Now For ₹99/-</button>
+      <div class="benefits-cta">
+        <a 
+          href="https://rzp.io/rzp/69OR42v" 
+          target="_blank" 
+          class="btn register-big gold-btn">
+          Register Now for ₹99/-
+        </a>
       </div>
     </div>
   </div>
@@ -270,9 +291,14 @@
         Starts: 1<sup>st</sup> November, Saturday | 11AM to 1PM
       </div>
 
-      <button class="register-btn btn register-big" data-amount="99">
-        Register Now For ₹99/-
-      </button>
+      <div class="benefits-cta">
+        <a 
+          href="https://rzp.io/rzp/69OR42v" 
+          target="_blank" 
+          class="btn register-big gold-btn">
+          Register Now for ₹99/-
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -340,23 +366,19 @@
   </main>
 
   <!-- Sticky Bottom Bar -->
-<div class="sticky-register-bar">
-  <div class="sticky-content">
-    <span class="sticky-text">🎯 Limited Seats — Register Now for ₹99 Only!</span>
-    <button id="registerStickyBtn" class="btn sticky-btn">Register Now</button>
+  <div class="sticky-register-bar">
+    <div class="sticky-content">
+      <span class="sticky-text">🎯 Limited Seats — Register Now for ₹99 Only!</span>
+      <a href="https://rzp.io/rzp/69OR42v" target="_blank" class="sticky-btn">
+        Register Now for ₹99/-
+      </a>
+    </div>
   </div>
-</div>
+  
+  
 
-<script>
-  // inside your existing JS file, add this under registerBtn logic:
-const registerStickyBtn = document.getElementById('registerStickyBtn');
-if (registerStickyBtn) {
-  registerStickyBtn.addEventListener('click', () => {
-    document.getElementById('registerBtn')?.click(); // triggers main Razorpay flow
-  });
-}
 
-</script>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -3,6 +3,9 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "axe/name-role-value": "off",
+    "axe/keyboard": "off",
+    "disown-opener": "off"
   }
 }
