@@ -3702,3 +3702,17 @@
 body {
   padding-bottom: 80px; /* adjust based on sticky height */
 }
+/* Forceful, safe gradient styling with fallback color */
+.razorpay-form .cta-title,
+.benefits-cta .cta-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 18px 0;
+  display: inline-block;
+  background: linear-gradient(90deg, #d4af37 0%, #ffb347 50%, #ff8c00 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  color: #d4af37 !important; /* fallback for very old browsers */
+  text-shadow: 0 0 8px rgba(212,175,55,0.22) !important;
+}
